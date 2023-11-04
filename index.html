@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head området til nettsiden -->
+<head>
+    <!-- Definerer metainformasjon og stilark i head-seksjonen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lenker til Normalize.css og Font Awesome-stiler -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+
+
+    <!-- Lenker til egendefinerte CSS-stiler -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Setter tittelen på nettstedet -->
+    <title>Shoepping.no</title>
+</head>
+
+
+
+<!-- Body området til nettsiden -->
+<body>
+
+
+  <!-- Hovedcontainer som bruker grid layout for å organisere og strukturere sidens innhold -->
+    <div id="grid-container">
+
+     <!-- Header-seksjonen -->
+        <header>
+            <nav>
+                <!-- Logo for nettsiden  -->
+                <a href="index.html" id="logo">
+
+                    <!-- Inkluderer bilde og tekst til logoen | Logobilde hentet fra IconDucks: https://iconduck.com/icons/213038/shoe -->
+                    <img src="img/duckicon_shoe.png" alt="Shopping Logo">
+                    <div class="logo-text">
+                        <h2>-PPING</h2>
+                        <p>Shoepping.no</p>
+                    </div>
+                </a>
+
+                <!-- Ikoner -->
+                <aside class="right-icons-flag-cart">
+                    <i id="cart" class="fas fa-shopping-cart"></i>
+                    <i id="flag" class="fas fa-flag"></i>
+                </aside>
+
+
+            <!-- Hovednavigasjonsmeny -->
+                <ul class="navbar">
+                    <!-- Navigasjonselementer -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">TRENDY</a></li>
+                    <li><a href="#" class="sign-in-link"><i class="fas fa-user"></i> SIGN IN</a></li>
+                </ul>
+
+
+            <!-- Søkefelt og ikoner -->
+                <nav class="search-and-icons">
+                    <input type="text" placeholder="SEARCH">
+                    <i id="bell" class="fas fa-bell"></i>
+                    <aside class="right-icons">
+                        <i id="search" class="fas fa-search"></i>
+                        <i id="ham" class="fas fa-bars"></i>
+                    </aside>
+                </nav>
+            </nav>
+        </header>
+
+
+        <!-- Hovedinnholdet i HTML-dokumentet -->
+        <main>
+            <!-- Seksjon for utvalgt merke -->
+            <section class="favorite-brand">
+
+                
+                <!-- Overskrift for utvalgt merke -->
+                <h2>Brand Spotlight: Must-See</h2>
+                <article>
+                    <!-- Overskrift og bilde for utvalgt merke -->
+                    <h3>Nike End-of-Season Sale</h3>
+                    <img src="img/feet-1840619_1280.jpg" alt="Brand Image">
+
+                    <!-- Informasjon om utvalgt merke -->
+                    <section class="brand-info">
+                        <h3>OUR FAVORITE BRAND</h3>
+                        <a href="produkt.html" class="shop-now">SHOP NOW</a>
+                    </section>
+                </article>
+            </section>
+
+
+            <!-- Seksjon for nye ankomster -->
+            <section class="new-arrivals">
+
+
+                <!-- Overskrift for nye ankomster -->
+                <h2>NEW ARRIVALS</h2>
+
+
+                <!-- Enkelte nyankomne elementer -->
+                <article>
+                    <h3>New Arrival 1</h3>
+                    <a href="produkt.html">
+                        <img src="img/footwear-5408643_1280.jpg" alt="New Arrival 1">
+                    </a>
+                </article>
+
+
+
+                <article>
+                    <h3>New Arrival 2</h3>
+                    <a href="produkt.html">
+                        <img src="img/jordan-4657349_1280.jpg" alt="New Arrival 2">
+                    </a>
+                </article>
+                <article>
+
+
+
+                    <h3>New Arrival 3</h3>
+                    <a href="produkt.html">
+                        <img src="img/football-19115_1280.jpg" alt="New Arrival 3">
+                    </a>
+                </article>
+            </section>
+
+
+
+            <!-- Mobilbunnmeny (kun tilgjengelig som mobilvisning) -->
+            <nav class="mobile-bottom-bar">
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </nav>
+        </main>
+
+
+        <!-- Footer-seksjonen -->
+        <footer>
+            <!-- Nyttige lenker seksjon -->
+            <section class="useful-links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <!-- Lenker til nyttige sider -->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+
+
+
+            <!-- Nyhetsbrev seksjon -->
+            <section class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <input type="email" placeholder="YOUR EMAIL ADDRESS">
+                <button>Be a member now!</button>
+            </section>
+
+
+
+            <!-- Sosiale medier lenker seksjon -->
+            <section class="socials">
+                <h2>Our socials</h2>
+
+
+                <!-- Lenker til sosiale medier profiler -->
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

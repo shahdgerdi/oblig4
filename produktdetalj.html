@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head området til nettsiden -->
+<head>
+    <!-- Definerer metainformasjon og stilark i head-seksjonen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lenker til Normalize.css og Font Awesome-stiler -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+
+
+    <!-- Lenker til egendefinerte CSS-stiler -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Setter tittelen på nettstedet -->
+    <title>Shoepping.no</title>
+</head>
+
+
+
+<!-- Body av HTML-dokumentet -->
+<body>
+
+    <!-- Grid-container som inneholder alt innhold -->
+    <div id="grid-container">
+
+        <!-- Header området for nettsiden -->
+        <header>
+
+            <!-- Navigation menu and logo -->
+            <nav>
+                <a href="index.html" id="logo">
+                    <img src="img/duckicon_shoe.png" alt="Shopping Logo">
+                    <div class="logo-text">
+                        <h2>-PPING</h2>
+                        <p>Shoepping.no</p>
+                    </div>
+                </a>
+
+                <!-- Ikoner -->
+                <aside class="right-icons-flag-cart">
+                    <i id="cart" class="fas fa-shopping-cart"></i>
+                    <i id="flag" class="fas fa-flag"></i>
+                </aside>
+
+                <!-- Main navigation menu -->
+                <ul class="navbar">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">TRENDY</a></li>
+                    <li><a href="#" class="sign-in-link"><i class="fas fa-user"></i> SIGN IN</a></li>
+                </ul>
+
+                <!-- Search og ikoner i navigasjonsmenyen -->
+
+               
+                <section class="search-and-icons" aria-label="Search and Icons">             <!-- Ønsker ikke å bruke h1-h6 overskrifter til seksjonene, så bruker aria-label et alternativ for å gi beskrivende navn til seksjonene uten å gjøre synlige endringer i designet. -->
+                    <input type="text" placeholder="SEARCH">
+                    <a href="index.html">
+                        <i id="arrow-back" class="fas fa-arrow-left"></i>
+                    </a>
+                    <i id="cart-product" class="fas fa-shopping-cart"></i>
+                </section>
+
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Produkt Detaljer -->
+            <section class="product-details" aria-label="Product Details">
+
+                <!-- Bilde Container: Inneholder både miniatyrbildene og hovedbildet -->
+                <aside class="image-column">
+
+                <!-- Miniatyrbilder som blir plassert ved siden av store hovedbildet -->
+                    <section class="thumbnail-images" aria-label="Thumbnail Images">
+                        <img src="https://placehold.co/150x100" alt="Sneakers - Limited Edition">
+                        <img src="https://placehold.co/150x100" alt="Thumbnail Image 2">
+                        <img src="https://placehold.co/150x100" alt="Thumbnail Image 3">
+                    </section>
+
+                <!-- Hovedbilde for produktdetalj siden -->
+                    <img class="main-image" src="https://placehold.co/600x400" alt="Sneakers - Limited Edition">
+                    <span class="image-navigation"><i class="fas fa-angle-left"></i> 1 av 3 <i class="fas fa-angle-right"></i></span>
+                </aside>
+
+                <!-- Product Info -->
+                <article class="info-column" aria-label="Product Info">
+                    <h2>SNEAKERS – LIMITED EDITION</h2>
+                    <p>WOMEN'S FOOTWEAR</p>
+                    <p>NOK 1,057 <s>NOK 1,499</s> <span>29% OFF</span></p>
+                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (911)</p>
+
+                <!-- Oppretter en size option label -->
+                    <label for="size">Size options</label>
+                    <select id="size">
+                        <option value="" disabled selected>Select Size</option>
+                    </select>
+
+                <!-- Oppretter "add to cart/favorites label" -->
+                    <button>Add to Cart</button>
+                    <button>Add to Favorite</button>
+                </article>
+
+            </section>
+
+            <!-- Mobilbunnmeny som er kun tilgjengelig som mobilvisning-->
+            <nav class="mobile-bottom-bar">
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </nav>
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <!-- Useful links section -->
+            <section class="useful-links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+
+            <!-- Newsletter section -->
+            <section class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <input type="email" placeholder="YOUR EMAIL ADDRESS">
+                <button>Be a member now!</button>
+            </section>
+
+
+            <!-- Social media links section -->
+            <section class="socials">
+                <h2>Our socials</h2>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
