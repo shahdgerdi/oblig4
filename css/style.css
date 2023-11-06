@@ -681,3 +681,37 @@ Kilde: https://webdesign.tutsplus.com/how-to-implement-a-load-more-button-with-v
 }
 
 }
+
+
+
+/* 
+    =============================
+    STILER FOR ANALYSEHTML
+    =============================
+*/
+
+/* Legg til avstand mellom tekstelementer kun for analysis.html */
+#analysis-h1,
+#analysis-paragraph {
+    margin-bottom: 20px;
+}
+
+/* Øk teksten innenfor <p> -elementene kun for analysis.html */
+#seo-analyse, #nokkelord-undersokelse, #uu-analyse, p {
+    font-size: 1.5rem; /* Du kan justere størrelsen etter behov */
+    text-align: left; 
+}
+
+#nokkelord-undersokelse ul li {
+  list-style-type: none;
+  margin-top: 6rem;
+}
+
+
+#seo-analyse  {
+  margin-top: 6rem; /* Juster avstanden etter dine preferanser */
+}
+
+#uu-analyse {
+  margin-top: 6rem; /* Juster avstanden etter dine preferanser */
+}
