@@ -50,12 +50,6 @@ header {
 .navbar { margin-top: 1.5rem;}
 
 
-.navbar a {
-  margin: 4px; /* Make sure there is space between the tap targets */
-  font-size: 16px; /* You can adjust the font-size if needed */
-}
-
-
 nav a {
 color: #333;
 font-size: 16px;
@@ -144,15 +138,6 @@ display: none;
 
 
 
-/* For icons like cart and flag which are interactive */
-#cart, #flag {
-  padding: 12px; /* Add padding to increase tap area to at least 48x48px */
-  font-size: 24px; /* Adjust the font-size to ensure icons are easily tappable */
-}
-
-
-
-
 
 
 /* Jeg la til "Home" i nav elementet - men velger å fjerne det
@@ -182,8 +167,6 @@ på mobil ved hjelp av media query: */
 
 .mobile-bottom-bar a {
   color: #0e0e0e;
-  padding:12px; 
-  margin: 4px;
   font-size: 24px; /* Økte skriftstørrelsen for å forstørre ikonene */
   text-decoration: none;
   transition: transform 0.5s, color 0.3s, border 0.3s; /* Glatt overgang ved hover */
@@ -242,16 +225,6 @@ list-style: none;
 padding: 0;
 
 }
-
-/* For the newsletter button */
-footer .newsletter button {
-  min-width: 48px; /* Ensure minimum width */
-  min-height: 48px; /* Ensure minimum height */
-  padding: 12px 20px; /* Adjust padding to increase tap area */
-  margin:20px;
-}
-
-
 
 
 
@@ -384,8 +357,6 @@ padding:1.5rem;
 #cart, #flag, input[type="text"] {
   display: inline-flex;
 }
-
-
 
 
 
