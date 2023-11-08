@@ -122,6 +122,19 @@ display: none;
 
 
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+
+
+
+
 
 /* Grunnstil for search-and-icons container */
 .search-and-icons {
@@ -245,9 +258,9 @@ padding: 0;
 
 /* For the newsletter button */
 footer .newsletter button {
-  min-width: 48px; /* Ensure minimum width */
-  min-height: 48px; /* Ensure minimum height */
-  padding: 12px 20px; /* Adjust padding to increase tap area */
+  min-width: 48px;
+  min-height: 48px; 
+  padding: 12px 20px; 
   margin:20px;
 }
 

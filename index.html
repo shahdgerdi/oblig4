@@ -68,7 +68,11 @@
 
             <!-- Søkefelt og ikoner -->
                 <nav class="search-and-icons">
-                    <input type="text" placeholder="SEARCH">
+
+                    <!-- Endringer ved å legge til label  -->
+                    <label for="search-field"></label>
+                    <input type="text" id="search-field" placeholder="SEARCH" aria-label="Search">
+
                     <i id="bell" class="fas fa-bell"></i>
                     <aside class="right-icons">
                         <i id="search" class="fas fa-search"></i>
@@ -165,7 +169,10 @@
             <!-- Nyhetsbrev seksjon -->
             <section class="newsletter">
                 <h2>NEWSLETTER</h2>
-                <input type="email" placeholder="YOUR EMAIL ADDRESS">
+                <!-- Email Input with Visually Hidden Label -->
+                <label for="email-field" class="visually-hidden">Your Email Address:</label>
+                <input type="email" id="email-field" placeholder="YOUR EMAIL ADDRESS" aria-label="Your Email Address">
+
                 <button>Be a member now!</button>
             </section>
 
@@ -175,11 +182,19 @@
             <section class="socials">
                 <h2>Our socials</h2>
 
-
-                <!-- Lenker til sosiale medier profiler -->
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- Lenker til sosiale medier profiler. Setter også på "aria-label" for å unngå feil på webaim -->
+                <a href="#" aria-label="Facebook"> 
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  
+                  <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  
+                  <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  
             </section>
         </footer>
     </div>
