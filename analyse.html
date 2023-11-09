@@ -388,53 +388,70 @@
 
 
 
+<section class id="Forbedringstiltak">
+    <h2>Forbedrings tiltak</h2>
+    <p>Basert på resultatene fra analysene, er det flere forbedringsområder som kan implementeres for å forbedre nettstedets SEO og tilgjengelige ved hjelp av WebAIM og Lighthouse.</p>
 
-
-
-
-
-
-
-
-<!-- Seksjon for Lighthouse og WebAIM Resultater -->
-<section id="ytelsesresultater">
-    <h2>Ytelsesresultater</h2>
-    <p>Dette avsnittet gir en oversikt over nettstedets ytelsesvurderinger gjennomført ved hjelp av Google Chrome's Lighthouse og WebAIM's tilgjengelighetstest.</p>
-    
-    <!-- Lighthouse Resultater -->
-    <article id="lighthouse-resultater">
-        <h3>Lighthouse Resultater</h3>
-        <p>For å forbedre nettstedets SEO og universell utforming, ble følgende tiltak implementert:</p>
+    <article>
+        <h2>Lighthouse Evaluering</h2>
+        <p> Ved hjelp av tilbakemeldingene fra Lighthouse, har jeg gjort endringer i HTML-koden. Blant annet har jeg lagt til en meta-beskrivelse for å forbedre nettstedets SEO, og justert på størrelsen og avstanden til de ulike elementene. Disse endringene har gjort at SEO forbedret seg til 100%. </p>
+        
+        <h3>Lighthouse resultater: </h3>
         <ul>
-            <li>Meta beskrivelser ble forbedret for å gi en mer nøyaktig og tiltalende oppsummering av sidens innhold.</li>
-            <li>Størrelse og avstand på navigasjonselementer ble justert for å forbedre brukeropplevelsen og navigasjonen på nettstedet.</li>
+            <li>
+                <h3>Forside : SEO</h3>
+                <img src="img/forside-forbedring.png" alt="Lighthouse resultat forside">
+            </li>
+
+            <li>
+                <h3>Produktside : SEO</h3>
+                <img src="img/produkt-forbedring.png" alt="Resultat for produktside">
+                
+            </li>
+            <li>
+                <h3>Produktdetalj side : SEO</h3>
+                <img src="img/produktdetalj-forbedring.png" alt="Resultat for produktdetaljside">
+            </li>
         </ul>
-        <p>Disse tiltakene førte til at nettstedet oppnådde en full score på Lighthouse's SEO evaluering, med en 100% poengsum på alle områder, inkludert ytelse, tilgjengelighet, beste praksiser og SEO.</p>
-        <figure>
-            <img src="path-to-lighthouse-screenshot.png" alt="Skjermbilde av Lighthouse 100% score">
-            <figcaption>Skjermbilde av Lighthouse 100% score på alle områder.</figcaption>
-        </figure>
+
     </article>
-    
-    <!-- WebAIM Resultater -->
-    <article id="webaim-resultater">
-        <h3>WebAIM Tilgjengelighetsresultater</h3>
-        <p>For å sikre at nettstedet er tilgjengelig for alle brukere, inkludert de med nedsatt funksjonsevne, ble WebAIM's tilgjengelighetstest utført. Resultatene viste følgende:</p>
-        <!-- Detaljer om WebAIM resultatene -->
-        <p>Detaljene og de spesifikke tiltakene som ble tatt for å oppnå disse resultatene, samt en oversikt over de oppnådde poengsummene, vil bli lagt til her etter at tilgjengelighetstestene er fullført.</p>
-        <figure>
-            <img src="path-to-webaim-screenshot.png" alt="Skjermbilde av WebAIM tilgjengelighetstest resultater">
-            <figcaption>Skjermbilde av WebAIM tilgjengelighetstest resultater.</figcaption>
-        </figure>
+
+    <article>
+        <h2>WebAIM Evaluering</h2>
+        <p> WebAIM identifiserte errors knyttet til nettsiden. Et av problemene var at nettsiden hadde ikke h1-tag, noe som ble løst. Et annet problem som også ble løstvar manglende label og søkefelt på ikonene til nettsiden. Det var også et par alerts når det gjelder bildene, da det ble kommentert på at bildene hadde en "sus" alternative text. </p>
+
+        <h3>WebAIM resultater: </h3>
+        <ul>
+            <li>
+                <h3>Forside : UU</h3>
+                <img src="img/forside-wa-new.png" alt="Resultat for forside">
+            </li>
+
+            <li>
+                <h3>Produktside : UU</h3>
+                <img src="img/produkt-wa-new.png" alt="Resultat for produktside">
+            </li>
+            <li>
+                <h3>Produktdetalj side : UU</h3>
+                <img src="img/produktdetalj-wa-new.png" alt="Resultat for produktdetaljside">
+            </li>
+        </ul>
     </article>
 </section>
 
+<section class id="Skjermleserkompatibilitet">
+    <h2>Skjermleserkompatibilitet</h2>
+    <p> Når det gjelder skjermleserkompatibilitet, presenterer Shoepping.no et godt fundament. Logoens alternativtekst er beskrivende og klart indikerer nettstedets identitet. Navigasjonsikoner som handlekurven og flagget har ARIA-labels, noe som er et positivt trekk, men de kunne vært mer detaljerte for å indikere den spesifikke handlingen en bruker kan forvente. </p>
+    <h2> Tastaturnavigasjon</h2>
+    <p>Nettstedet har implementert en "Skip to main content"-lenke, noe som er en utmerket praksis for å støtte brukere som navigerer med tastatur. Dette tillater brukere å hoppe over navigasjonsmenyen og gå direkte til hovedinnholdet. De interaktive elementene, som navigasjonsmenyen og sidenavigasjonen på produktsiden, er tilgjengelige via tastatur. Imidlertid bør det sikres at det er synlige fokusindikatorer for alle fokuserbare elementer for å hjelpe tastaturbrukere med å navigere.</p>
+    <h2>Bruken av ARIA-attributter</h2>
+    <p>Bruken av ARIA-attributter på nettsiden.no hjelper folk som bruker skjermlesere ved å gjøre innholdet lettere å forstå. Men det er noen steder hvor disse ARIA-attributtene kunne blitt brukt på en bedre måte. For eksempel, delen med søkefeltet og ikonene ville vært lettere å bruke hvis det var lagt til en spesiell ARIA-rolle som forteller brukeren at dette området er for søk. Dette ville gjøre det klarere for brukere hva de kan gjøre i denne delen av nettsiden.</p>
+</section>
+
+</main>
 
 
-    </main>
 
-
-    
     <!-- Footer-seksjonen -->
         <footer>
             <!-- Nyttige lenker seksjon -->
@@ -447,20 +464,6 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             
 
             <!-- Nyhetsbrev seksjon -->

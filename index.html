@@ -29,10 +29,16 @@
 <body>
 
 
+     <!-- SKIP TO MAIN LINK -->
+     <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+
   <!-- Hovedcontainer som bruker grid layout for å organisere og strukturere sidens innhold -->
     <div id="grid-container">
 
      <!-- Header-seksjonen -->
+
+
         <header>
             <nav>
                 <!-- Logo for nettsiden  -->
@@ -41,16 +47,17 @@
                     <!-- Inkluderer bilde og tekst til logoen | Logobilde hentet fra IconDucks: https://iconduck.com/icons/213038/shoe -->
                     <img src="img/duckicon_shoe.png" alt="Shopping Logo">
                     <div class="logo-text">
-                        <h2>-PPING</h2>
+                        <h1>-PPING</h1>
                         <p>Shoepping.no</p>
                     </div>
                 </a>
 
                 <!-- Ikoner -->
                 <aside class="right-icons-flag-cart">
-                    <i id="cart" class="fas fa-shopping-cart"></i>
-                    <i id="flag" class="fas fa-flag"></i>
-                </aside>
+                    <!-- Bruker 'button' i stedet for 'i' for å gjøre elementet interaktivt på keyboard -->
+                    <button id="cart" class="fas fa-shopping-cart" aria-label="Handlekurv"></button>
+                    <button id="flag" class="fas fa-flag" aria-label="Flagg"></button>
+                  </aside>
 
 
             <!-- Hovednavigasjonsmeny -->
@@ -70,8 +77,9 @@
                 <nav class="search-and-icons">
 
                     <!-- Endringer ved å legge til label  -->
-                    <label for="search-field"></label>
+                    <label for="search-field" class="visually-hidden">Search:</label>
                     <input type="text" id="search-field" placeholder="SEARCH" aria-label="Search">
+
 
                     <i id="bell" class="fas fa-bell"></i>
                     <aside class="right-icons">
@@ -84,7 +92,9 @@
 
 
         <!-- Hovedinnholdet i HTML-dokumentet -->
+        
         <main>
+            <main id="maincontent">
             <!-- Seksjon for utvalgt merke -->
             <section class="favorite-brand">
 
@@ -94,7 +104,7 @@
                 <article>
                     <!-- Overskrift og bilde for utvalgt merke -->
                     <h3>Nike End-of-Season Sale</h3>
-                    <img src="img/feet-1840619_1280.jpg" alt="Brand Image">
+                    <img src="img/feet-1840619_1280.jpg" alt="Image of shoes">
 
                     <!-- Informasjon om utvalgt merke -->
                     <section class="brand-info">
@@ -111,7 +121,6 @@
 
                 <!-- Overskrift for nye ankomster -->
                 <h2>NEW ARRIVALS</h2>
-
 
                 <!-- Enkelte nyankomne elementer -->
                 <article>
@@ -144,10 +153,11 @@
 
             <!-- Mobilbunnmeny (kun tilgjengelig som mobilvisning) -->
             <nav class="mobile-bottom-bar">
-                <a href="#"><i class="fas fa-home"></i></a>
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-user"></i></a>
-            </nav>
+                <a href="#" aria-label="Home"><i class="fas fa-home"></i></a>
+                <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
+                <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
+              </nav>
+              
         </main>
 
 
@@ -171,7 +181,8 @@
                 <h2>NEWSLETTER</h2>
                 <!-- Email Input with Visually Hidden Label -->
                 <label for="email-field" class="visually-hidden">Your Email Address:</label>
-                <input type="email" id="email-field" placeholder="YOUR EMAIL ADDRESS" aria-label="Your Email Address">
+                <input type="email" id="email-field" placeholder="YOUR EMAIL ADDRESS">
+
 
                 <button>Be a member now!</button>
             </section>

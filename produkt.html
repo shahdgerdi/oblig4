@@ -3,10 +3,15 @@
 
 <!-- Head området til nettsiden -->
 <head>
-    <!-- Definerer metainformasjon og stilark i head-seksjonen -->
+    <!-- Generell metadata start-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shahd Burhan">
     <meta name="description" content="Discover the latest in comfort & style with our wide range of shoes for all occasions.">
+    <!-- Slutt -->
+
+
+
 
     <!-- Lenker til Normalize.css og Font Awesome-stiler -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
@@ -14,14 +19,19 @@
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-
-
     <!-- Lenker til egendefinerte CSS-stiler -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- Setter tittelen på nettstedet -->
     <title>Shoepping.no</title>
 </head>
+
+<body>
+
+     <!-- SKIP TO MAIN LINK -->
+     <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+
 
     <!-- Hovedinnhold beholder -->
     <div id="grid-container">
@@ -38,16 +48,18 @@
                     <!-- Logobilde og tekst -->
                     <img src="img/duckicon_shoe.png" alt="Shopping Logo">
                     <div class="logo-text">
-                        <h2>-PPING</h2>
+                        <h1>-PPING</h1>
                         <p>Shoepping.no</p>
                     </div>
                 </a>
                 
-            <!-- Ikoner -->
-                <aside class="right-icons-flag-cart">
-                    <i id="cart" class="fas fa-shopping-cart"></i>
-                    <i id="flag" class="fas fa-flag"></i>
-                </aside>
+             <!-- Ikoner -->
+             <aside class="right-icons-flag-cart">
+                <!-- Bruker 'button' i stedet for 'i' for å gjøre elementet interaktivt på keyboard -->
+                <button id="cart" class="fas fa-shopping-cart" aria-label="Handlekurv"></button>
+                <button id="flag" class="fas fa-flag" aria-label="Flagg"></button>
+              </aside>
+
 
                 
                 <!-- Hovednavigasjonsmeny -->
@@ -63,10 +75,10 @@
 
                 <!-- Søk og ikoner i navigasjonsmenyen -->
                 <nav class="search-and-icons">
-                    <input type="text" placeholder="SEARCH"> 
-                    <a href="index.html">
+                    <label for="search-field" class="visually-hidden">Search:</label>
+                    <input type="text" id="search-field" placeholder="SEARCH" aria-label="Search">
                         <i id="arrow-back" class="fas fa-arrow-left"></i>
-                    </a>
+
                     
 
                     <aside class="right-icons">
@@ -80,6 +92,7 @@
 
         <!-- Main Content -->
         <main>
+            <main id="maincontent">
             
             <section class="products">
                 <h2>Products</h2>
@@ -192,40 +205,58 @@
 
             <!-- Mobilbunnmeny -->
             <nav class="mobile-bottom-bar">
-                <a href="#"><i class="fas fa-home"></i></a>
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-user"></i></a>
-            </nav>
+                <a href="#" aria-label="Home"><i class="fas fa-home"></i></a>
+                <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
+                <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
+              </nav>
+              
         </main>
         
-                <!-- Footer Seksjon -->
-                <footer>
-                    <!-- Useful Links -->
-                    <section class="useful-links">
-                        <h2>Useful Links</h2>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </section>
-        
-                    <!-- Newsletter -->
-                    <section class="newsletter">
-                        <h2>NEWSLETTER</h2>
-                        <input type="email" placeholder="YOUR EMAIL ADDRESS">
-                        <button>Be a member now!</button>
-                    </section>
-        
-                    <!-- Social Media Links -->
-                    <section class="socials">
-                        <h2>Our socials</h2>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </section>
-                </footer>
-            </div>
-        </body>
-        </html>
-        
+        <!-- Footer-seksjonen -->
+        <footer>
+            <!-- Nyttige lenker seksjon -->
+            <section class="useful-links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <!-- Lenker til nyttige sider -->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+
+
+            <!-- Nyhetsbrev seksjon -->
+            <section class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <!-- Email Input with Visually Hidden Label -->
+                <label for="email-field" class="visually-hidden">Your Email Address:</label>
+                <input type="email" id="email-field" placeholder="YOUR EMAIL ADDRESS">
+
+                <button>Be a member now!</button>
+            </section>
+
+
+            <!-- Sosiale medier lenker seksjon -->
+            <section class="socials">
+                <h2>Our socials</h2>
+
+                <!-- Lenker til sosiale medier profiler. Setter også på "aria-label" for å unngå feil på webaim -->
+                <a href="#" aria-label="Facebook"> 
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  
+                  <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  
+                  <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
