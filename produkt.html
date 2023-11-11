@@ -1,78 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Head området til nettsiden -->
 <head>
-    <!-- Generell metadata start-->
+    <!-- Generell metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Shahd Burhan">
     <meta name="description" content="Discover the latest in comfort & style with our wide range of shoes for all occasions.">
-    <!-- Slutt -->
 
-
-
-
-    <!-- Facebook OG Instagram : Open Graph Meta Tags -->
-     
+    <!-- Facebook OG Instagram: Open Graph Meta Tags -->
     <meta property="og:title" content="Shoepping.no - Step into Style">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.shoepping.no">
     <meta property="og:description" content="Discover the latest in comfort & style with our wide range of shoes for all occasions. Shop the newest trends today!">
-    <meta property="og:image" content="https://www.shoepping.no/img/feet-1840619_1280.jpg">
     <meta property="og:site_name" content="Shoepping.no">
 
-
-    <!-- Lenker til Normalize.css og Font Awesome-stiler -->
+    <!-- Eksterne stilark og Font Awesome-ikoner -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-    <!-- Lenker til egendefinerte CSS-stiler -->
+
+    <!-- Egendefinerte CSS-stiler -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <!-- Setter tittelen på nettstedet -->
+    <!-- Tittel -->
     <title>Shoepping.no</title>
 </head>
-
 <body>
-
-     <!-- SKIP TO MAIN LINK -->
-     <a href="#maincontent" class="skip-link">Skip to main content</a>
-
-
+    <!-- Hopp til hovedinnhold -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
 
     <!-- Hovedinnhold beholder -->
     <div id="grid-container">
-
-
-        <!-- Header Section -->
+        <!-- Header-seksjon -->
         <header>
-
-            <!-- Navigasjonsmeny og logo -->
             <nav>
-                <!-- Lenker logoen til hovedsiden slikt at man enklere kan navigere seg tilbake til hovedsside-->
+                <!-- Logo -->
                 <a href="index.html" id="logo">
-
-                    <!-- Logobilde og tekst -->
                     <img src="img/duckicon_shoe.png" alt="Shopping Logo">
                     <div class="logo-text">
                         <h1>-PPING</h1>
                         <p>Shoepping.no</p>
                     </div>
                 </a>
-                
-             <!-- Ikoner -->
-             <aside class="right-icons-flag-cart">
-                <!-- Bruker 'button' i stedet for 'i' for å gjøre elementet interaktivt på keyboard -->
-                <button id="cart" class="fas fa-shopping-cart" aria-label="Handlekurv"></button>
-                <button id="flag" class="fas fa-flag" aria-label="Flagg"></button>
-              </aside>
-
-
-                
-                <!-- Hovednavigasjonsmeny -->
+                <!-- Ikoner -->
+                <aside class="right-icons-flag-cart">
+                    <button id="cart" class="fas fa-shopping-cart" aria-label="Handlekurv"></button>
+                    <button id="flag" class="fas fa-flag" aria-label="Flagg"></button>
+                </aside>
+                <!-- Navigasjonsmeny -->
                 <ul class="navbar">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#">WOMEN</a></li>
@@ -82,88 +59,70 @@
                     <li><a href="analyse.html">ANALYSE</a></li>
                     <li><a href="#" class="sign-in-link"><i class="fas fa-user"></i> SIGN IN</a></li>
                 </ul>
-
-                <!-- Søk og ikoner i navigasjonsmenyen -->
+                <!-- Søkefelt og ikoner -->
                 <nav class="search-and-icons">
                     <label for="search-field" class="visually-hidden">Search:</label>
                     <input type="text" id="search-field" placeholder="SEARCH" aria-label="Search">
-                        <i id="arrow-back" class="fas fa-arrow-left"></i>
-
-                    
-
+                    <i id="arrow-back" class="fas fa-arrow-left"></i>
                     <aside class="right-icons">
                         <i id="filter" class="fas fa-filter"></i> 
                         <i id="search" class="fas fa-search"></i>
-                                 </aside>
+                    </aside>
                 </nav>
-
             </nav>
         </header>
 
-        <!-- Main Content -->
-        <main>
-            <main id="maincontent">
-            
+        <!-- Hovedinnhold -->
+        <main id="maincontent">
             <section class="products">
                 <h2>Products</h2>
-                
-                <!-- Product 1 -->
+                <!-- Produkt 1 -->
                 <article class="product-item">
                     <a href="produktdetalj.html">
                         <h3>Trykk her</h3>
                         <img class="product-image" src="https://placehold.co/600x400" alt="Product 1">
-
                         <!-- Rating og pris -->
                         <span class="product-rating">
-                            <!-- Stjernerating hentet fra https://fontawesome.com/icons/star?style=solid -->
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> (1273)
                         </span>
-                        <!-- Pris for produktet-->
                         <p class="product-price">1 103 NOK</p>
                     </a>
                 </article>
 
-              <!-- Product 2 -->
-              <article class="product-item">
-                <h3>Product 2</h3>
-                <img class="product-image" src="https://placehold.co/600x400" alt="Product 2">
-                <!--  Rating og pris -->
-                <span class="product-rating">
-                    <!-- Stjernerating hentet fra https://fontawesome.com/icons/star?style=solid -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i> (923)
-                </span>
-                <!-- Pris for produktet-->
-                <p class="product-price">1 003 NOK</p>
-            </article>
+                <!-- Produkt 2 -->
+                <article class="product-item">
+                    <h3>Product 2</h3>
+                    <img class="product-image" src="https://placehold.co/600x400" alt="Product 2">
+                    <!-- Rating og pris -->
+                    <span class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> (923)
+                    </span>
+                    <p class="product-price">1 003 NOK</p>
+                </article>
 
-
-               <!-- Product 3 -->
+                <!-- Produkt 3 -->
                 <article class="product-item">
                     <h3>Product 3</h3>
                     <img class="product-image" src="https://placehold.co/600x400" alt="Product 3">
-                    <!--  Rating og pris -->
+                    <!-- Rating og pris -->
                     <span class="product-rating">
-                     <!-- Stjernerating  -->
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i> (1003)
                     </span>
-                    <!-- Pris for produktet-->
                     <p class="product-price">900 NOK</p>
                 </article>
 
-                
-
-                <!--  Produkt 4  -->
+                <!-- Produkt 4 -->
                 <article class="product-item">
                     <h3>Product 4</h3>
                     <img class="product-image" src="https://placehold.co/600x400" alt="Product 4">
@@ -201,72 +160,53 @@
                 </article>
             </section>
 
-        
-            <!-- Load more button | Inspirasjon hentet fra https://webdesign.tutsplus.com/how-to-implement-a-load-more-button-with-vanilla-javascript--cms-42080t 
-            
-            ! -->
+            <!-- Last flere produkter-knapp -->
             <button id="load-more">Load more</button>
-                <span>Showing 
-                <span id="card-count">6</span> of 
-                <span id="card-total">1036</span> products      
-                </span>
-    
-
+            <span>Showing <span id="card-count">6</span> of <span id="card-total">1036</span> products</span>
 
             <!-- Mobilbunnmeny -->
             <nav class="mobile-bottom-bar">
                 <a href="#" aria-label="Home"><i class="fas fa-home"></i></a>
                 <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
                 <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
-              </nav>
-              
+            </nav>
         </main>
-        
+
         <!-- Footer-seksjonen -->
         <footer>
             <!-- Nyttige lenker seksjon -->
             <section class="useful-links">
                 <h2>Useful Links</h2>
                 <ul>
-                    <!-- Lenker til nyttige sider -->
                     <li><a href="#">About</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </section>
 
-
             <!-- Nyhetsbrev seksjon -->
             <section class="newsletter">
                 <h2>NEWSLETTER</h2>
-                <!-- Email Input with Visually Hidden Label -->
                 <label for="email-field" class="visually-hidden">Your Email Address:</label>
                 <input type="email" id="email-field" placeholder="YOUR EMAIL ADDRESS">
-
                 <button>Be a member now!</button>
             </section>
-
 
             <!-- Sosiale medier lenker seksjon -->
             <section class="socials">
                 <h2>Our socials</h2>
-
-                <!-- Lenker til sosiale medier profiler. Setter også på "aria-label" for å unngå feil på webaim -->
                 <a href="#" aria-label="Facebook"> 
                     <i class="fab fa-facebook"></i>
-                  </a>
-                  
-                  <a href="#" aria-label="Twitter">
+                </a>
+                <a href="#" aria-label="Twitter">
                     <i class="fab fa-twitter"></i>
-                  </a>
-                  
-                  <a href="#" aria-label="Instagram">
+                </a>
+                <a href="#" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
-                  </a>
-                  
+                </a>
             </section>
         </footer>
     </div>
 </body>
-
 </html>
+

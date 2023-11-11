@@ -14,10 +14,10 @@ img {
 body {
   position:relative;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  padding-bottom: 70px;
 }
 
 
@@ -249,24 +249,22 @@ på mobil ved hjelp av media query: */
 
 
 
-
-
-
 /* === FOOTER === */
 
 
-/* Grunnstil for alle skjermstørrelser */
+/* Grunnstil for footer*/
 footer{
   grid-area: footer;
-  margin-top: 4rem;
   display: flex;
+  margin-top: 4rem;
   flex-direction: column; /* Endret til kolonne-retning for mobilvisning */
   align-items: center;
   text-align: center;
   background-color: #484646;
+  box-sizing:border-box;
+  border: none;
   color: #fff;
 }
-
 
 
 footer a{
@@ -293,17 +291,13 @@ footer .newsletter button {
 }
 
 
-
-
-
 footer section {
 flex: 1; /* Dette gjør at hver seksjon tar lik bredde på store skjermer */
 display: flex;
 flex-direction: column;
 align-items: center;
 margin: 0;
-text-align: center;
-width: 100%;
+text-align: center
 }
 
 
