@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Head området  -->
+<!-- Head området -->
 <head>
-
-
-  <!-- Metainformasjon i head området  -->
+    <!-- Metai i head området -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the latest in comfort & style with our wide range of shoes for all occasions.">
-  <!-- Open Graph-metadata for bedre deling på sosiale medier -->
+    <!-- Open Graph-metadata for bedre deling på sosiale medier -->
     <meta property="og:title" content="Shoepping.no - Step into Style">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.shoepping.no">
     <meta property="og:description" content="Discover the latest in comfort & style with our wide range of shoes for all occasions. Shop the newest trends today!">
-    <meta property="og:image" content="https://www.shoepping.no/img/feet-1840619_1280.jpg">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg">
     <meta property="og:site_name" content="Shoepping.no">
-
-  
-    <!-- Facebook og Instagram Metadata -->
-    <!-- Slutt -->
-
-
-
-    
-
     <!-- Normalize.css og Font Awesome lenker -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-
     <!-- Lenker til egendefinerte CSS filer -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- Tittel på nettsted -->
@@ -40,15 +26,14 @@
 
 <!-- Body området -->
 <body>
-<!-- Skip to maincontent  -->
+    <!-- Skip to maincontent -->
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <!-- Grid container -->
     <div id="grid-container">
-
-      <!-- Header området -->
+        <!-- Header området -->
         <header>
             <nav>
-              <!-- Logo for nettsiden -->
+                <!-- Logo for nettsiden -->
                 <a href="index.html" id="logo">
                     <img src="img/duckicon_shoe.png" alt="Shopping Logo">
                     <div class="logo-text">
@@ -56,13 +41,12 @@
                         <p>Shoepping.no</p>
                     </div>
                 </a>
-
-              <!-- Knapper for handlekurv og flagg med aria-label for bedre tilgjengelighet -->
-
+                <!-- Knapper for handlekurv og flagg med aria-label for bedre tilgjengelighet -->
                 <aside class="right-icons-flag-cart">
                     <button id="cart" class="fas fa-shopping-cart" aria-label="Handlekurv"></button>
                     <button id="flag" class="fas fa-flag" aria-label="Flagg"></button>
                 </aside>
+                <!-- The aside element is closed properly here -->
                 <ul class="navbar">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#">WOMEN</a></li>
@@ -72,9 +56,7 @@
                     <li><a href="analyse.html">ANALYSE</a></li>
                     <li><a href="#" class="sign-in-link"><i class="fas fa-user"></i> SIGN IN</a></li>
                 </ul>
-
                 <!-- Søkefelt og tilleggsikoner for brukergrensesnitt -->
-
                 <section class="search-and-icons" aria-label="Search and Icons">
                     <label for="search-field" class="visually-hidden">Search:</label>
                     <input type="text" id="search-field" placeholder="SEARCH" aria-label="Search">
@@ -86,100 +68,124 @@
 
         <!-- Hovedinnholdet i siden -->
         <main id="maincontent">
-          <!-- Miniatyrbildene for produktet -->
-            <section class="product-details" aria-label="Product Details">
-                <aside class="image-column">
-                    <section class="thumbnail-images" aria-label="Thumbnail Images">
-                        <img src="https://placehold.co/150x100" alt="Sneakers - Limited Edition">
-                        <img src="https://placehold.co/150x100" alt="Thumbnail Image 2">
-                        <img src="https://placehold.co/150x100" alt="Thumbnail Image 3">
-                    </section>
-                    <!-- Hovedbilde for produktet -->
-                    <img class="main-image" src="https://placehold.co/600x400" alt="Sneakers - Limited Edition">
-                    <span class="image-navigation"><i class="fas fa-angle-left"></i> 1 of 3 <i class="fas fa-angle-right"></i></span>
-                </aside>
 
-                <!-- Detaljert produktinformasjon med strukturert data for SEO -->
-                <div itemscope itemtype="http://schema.org/Product">
-                    <h2 itemprop="name">SNEAKERS – LIMITED EDITION</h2>
-                    <p>WOMEN'S FOOTWEAR</p>
-                    <link itemprop="image" href="https://placehold.co/600x400">
-                    
-                    
-              
-                    <!-- Prisinformasjon for produktet med Schema.org's mikrodata -->
-                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                      <link itemprop="url" href="https://www.shoepping.no/sneakers-limited-edition">
+          <!-- Produktdetaljer -->
+          <section class="product-details" aria-label="Product Details">
+              <aside class="image-column">
+                  <section class="thumbnail-images" aria-label="Thumbnail Images">
+                      <img src="https://placehold.co/150x100" alt="Sneakers - Limited Edition">
+                      <img src="https://placehold.co/150x100" alt="Thumbnail Image 2">
+                      <img src="https://placehold.co/150x100" alt="Thumbnail Image 3">
+                  </section>
+              </aside>
+              <!-- Seksjson for produktinfo -->
+              <section itemscope itemtype="http://schema.org/Product" id="productInfo">
+                <h2 itemprop="name">SNEAKERS – LIMITED EDITION</h2>
+                <figure>
+                    <!-- Hovedbilde av produktet -->
+                    <img itemprop="image" class="main-image" src="https://placehold.co/600x400" alt="Sneakers - Limited Edition">
+                    <figcaption class="image-navigation"><i class="fas fa-angle-left"></i> 1 of 3 <i class="fas fa-angle-right"></i></figcaption>
+                </figure>
+                <p itemprop="description">High-quality limited edition sneakers perfect for any occasion.</p>
+                <p itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                    <span itemprop="name">Nikeswag</span>
+                </p>
+
+                  <!-- Microdata for tilbudsinformasjon -->
+                  <section itemprop="offers" itemscope itemtype="http://schema.org/Offer" aria-label="Offer">
                       <meta itemprop="priceCurrency" content="NOK">
                       <meta itemprop="price" content="1057.00">
                       <meta itemprop="availability" content="http://schema.org/InStock">
-                      <time itemprop="priceValidUntil" datetime="2024-12-31">NOK 1,057 <s> NOK 1,499</s> <span>29% OFF</span></time>
-                  </div>
+                      <time itemprop="priceValidUntil" datetime="2024-12-31">NOK 1,057 <s> NOK 1,499</s></time>
+                      <section itemprop="shippingDetails" itemscope itemtype="http://schema.org/OfferShippingDetails" aria-label="Shipping Details">
+                          <meta itemprop="shippingRate" itemscope itemtype="http://schema.org/MonetaryAmount" content="50 NOK">
+                          <meta itemprop="shippingDestination" content="NO">
+                          <meta itemprop="deliveryTime" content="2-5 working days">
+                      </section>
 
-                    <!-- Størrelsesvalg for produktet -->
-                    <label for="size">Size options:</label>
-                    <select id="size" name="size">
-                      <!-- Alternativer for størrelse, inkludert en standardvalg som er deaktivert -->
-                        <option value="" disabled selected>Select size</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
+                      <!-- Microdata for ReturnPolicy  -->
+                      <section itemprop="hasMerchantReturnPolicy" itemscope itemtype="http://schema.org/MerchantReturnPolicy" aria-label="Return Policy">
+                          <meta itemprop="returnPolicyCountry" content="NOK">
+                          <meta itemprop="merchantReturnDays" content="30">
+                          <meta itemprop="refundType" content="http://schema.org/FullRefund">
+                          <meta itemprop="returnFees" content="http://schema.org/CustomerPays">
+                          <meta itemprop="returnMethod" content="http://schema.org/MailIn">
+                      </section>
+                  </section>
 
-                    <!-- Knapper for å legge til produktet i handlekurven eller favorittlisten -->
-                    <button type="button" id="addToCart">Add to Cart</button>
-                    <button type="button" id="addToFavorite">Add to Favorite</button>
+                  <!-- Størrelsesalternativer -->
+                  <label for="size">Size options:</label>
+                  <select id="size" name="size">
+                      <option value="" disabled selected>Select size</option>
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                  </select>
 
-                    <!-- Samlet vurdering av produktet med stjerner og antall anmeldelser -->
-                    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                      <meta itemprop="ratingValue" content="4.5">
-                      <meta itemprop="reviewCount" content="911">
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i><i class="far fa-star"></i> <span>(911)</span>
-                  </div>
-            </section>
+                  <!-- Knappf or å legge til kurv og favoritter -->
+                  <button type="button" id="addToCart">Add to Cart</button>
+                  <button type="button" id="addToFavorite">Add to Favorite</button>
 
-
-          <!-- Navigasjonsbar for mobile enheter -->
-            <nav class="mobile-bottom-bar">
-                <a href="#" aria-label="Home"><i class="fas fa-home"></i></a>
-                <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
-                <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
-            </nav>
-        </main>
-
+                  <!-- Anmeldelser -->
+                  <section itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" aria-label="Rate" id="reviews">
+                    <meta itemprop="itemReviewed" content="productInfo">
+                    <meta itemprop="name" content="SNEAKERS – LIMITED EDITION">
+                    <meta itemprop="ratingValue" content="4.5">
+                    <meta itemprop="reviewCount" content="911">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i> <span>(911)</span>
+                </section>
+              </section>
+          </section>
+      </main>
+      
+        <!-- Navigasjonsbar for mobile enheter -->
+        <nav class="mobile-bottom-bar">
+            ...
+        </nav>
         <!-- Footer seksjon -->
         <footer>
-            <section class="useful-links">
+               <!-- Nyttige lenker seksjon -->
+               <section class="useful-links">
                 <h2>Useful Links</h2>
                 <ul>
+                    <!-- Lenker til nyttige sider -->
                     <li><a href="#">About</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </section>
 
-            <!-- Nyhetsbrevseksjon for e-postabonnement -->
+
+
+            <!-- Nyhetsbrev seksjon -->
             <section class="newsletter">
                 <h2>NEWSLETTER</h2>
+                <!-- Email Input with Visually Hidden Label -->
                 <label for="email-field" class="visually-hidden">Your Email Address:</label>
                 <input type="email" id="email-field" placeholder="YOUR EMAIL ADDRESS">
+
+
                 <button>Be a member now!</button>
             </section>
 
-            <!-- Sosiale medier lenker -->
+            <!-- Sosiale medier lenker seksjon -->
             <section class="socials">
-              <!-- Lenker til sosiale medier med ikoner og aria-label for bedre tilgjengelighet -->
                 <h2>Our socials</h2>
-                <a href="#" aria-label="Facebook">
+
+                <!-- Lenker til sosiale medier profiler. Setter også på "aria-label" for å unngå feil på webaim -->
+                <a href="#" aria-label="Facebook"> 
                     <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" aria-label="Twitter">
+                  </a>
+                  
+                  <a href="#" aria-label="Twitter">
                     <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" aria-label="Instagram">
+                  </a>
+                  
+                  <a href="#" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
-                </a>
+                  </a>
+                  
             </section>
         </footer>
     </div>
