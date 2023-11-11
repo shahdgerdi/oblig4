@@ -535,27 +535,42 @@ Kilde: https://webdesign.tutsplus.com/how-to-implement-a-load-more-button-with-v
 }
 
 
-
-/* Stil for hvert enkelt produkt */
-.product-item {
-  border: 1px solid #e0e0e0;
-  padding: 1rem;
-  transition: all 200ms ease-in-out;
+.product-details {
+  display: flex;
+  justify-content: space-between; /* Endre etter behov for å passe til din design */
+  align-items: flex-start; /* Pass på at elementene linjer opp på toppen */
 }
 
-
-/* Hover-effekt for å gjøre den mer livlig */
-.product-item:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.thumbnail-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Juster etter behov */
+  margin-right: 20px; /* Juster etter behov */
 }
 
-
-/* Justering av størrelse */
-.product-image {
-  max-width: 100%;
-  height: auto;
-  margin: 2px;
+/* Stil for å vise hovedbildet og tilhørende navigasjon */
+.main-image {
+  width: 100%; /* Juster etter behov */
+  height: auto; /* Sørger for at bildet skalerer proporsjonalt */
 }
+
+.image-navigation {
+  display: block; /* Eller bruk 'flex' om nødvendig */
+  position: absolute; /* Juster etter behov */
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Juster knapper og produktinformasjon */
+#productInfo {
+  flex: 3; /* Gir produktinformasjonen mer plass om nødvendig */
+  padding: 0 20px; /* Juster etter behov */
+}
+
+#addToCart, #addToFavorite {
+  margin-top: 10px; /* Legger til avstand over knappene */
+}
+
 
 
 /* Stil for "LOAD MORE" */

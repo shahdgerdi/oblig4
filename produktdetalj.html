@@ -86,17 +86,18 @@
                     <img itemprop="image" class="main-image" src="https://placehold.co/600x400" alt="Sneakers - Limited Edition">
                     <figcaption class="image-navigation"><i class="fas fa-angle-left"></i> 1 of 3 <i class="fas fa-angle-right"></i></figcaption>
                 </figure>
-                <p itemprop="description">High-quality limited edition sneakers perfect for any occasion.</p>
+                <p class="desc" itemprop="description">High-quality limited edition! </p>
                 <p itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-                    <span itemprop="name">Nikeswag</span>
+                    <span class="nikeswag" itemprop="name">Nikeswag</span>
                 </p>
+              
 
                   <!-- Microdata for tilbudsinformasjon -->
                   <section itemprop="offers" itemscope itemtype="http://schema.org/Offer" aria-label="Offer">
                       <meta itemprop="priceCurrency" content="NOK">
                       <meta itemprop="price" content="1057.00">
                       <meta itemprop="availability" content="http://schema.org/InStock">
-                      <time itemprop="priceValidUntil" datetime="2024-12-31">NOK 1,057 <s> NOK 1,499</s></time>
+                      <time class ="priceproduct" itemprop="priceValidUntil" datetime="2024-12-31">NOK 1,057 <s> NOK 1,499</s></time>
                       <section itemprop="shippingDetails" itemscope itemtype="http://schema.org/OfferShippingDetails" aria-label="Shipping Details">
                           <meta itemprop="shippingRate" itemscope itemtype="http://schema.org/MonetaryAmount" content="50 NOK">
                           <meta itemprop="shippingDestination" content="NO">
@@ -122,9 +123,9 @@
                       <option value="large">Large</option>
                   </select>
 
-                  <!-- Knappf or å legge til kurv og favoritter -->
-                  <button type="button" id="addToCart">Add to Cart</button>
-                  <button type="button" id="addToFavorite">Add to Favorite</button>
+                  <!-- Knapp for å legge til kurv og favoritter -->
+                  <button type="button" class="btn" id="addToCart">Add to Cart</button>
+                  <button type="button" class="btn" id="addToFavorite">Add to Favorite</button>
 
                   <!-- Anmeldelser -->
                   <section itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" aria-label="Rate" id="reviews">
@@ -140,8 +141,10 @@
       </main>
       
         <!-- Navigasjonsbar for mobile enheter -->
-        <nav class="mobile-bottom-bar">
-            ...
+          <nav class="mobile-bottom-bar">
+            <a href="#" aria-label="Home"><i class="fas fa-home"></i></a>
+            <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
+            <a href="#" aria-label="Profile"><i class="fas fa-user"></i></a>
         </nav>
         <!-- Footer seksjon -->
         <footer>
