@@ -6,6 +6,7 @@
     <!-- Definerer metainformasjon og stilark i head-seksjonen -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shahd Burhan">
 
     <!-- Lenker til Normalize.css og Font Awesome-stiler -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
@@ -14,19 +15,17 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
 
-
     <!-- Metainformasjon i head området  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the latest in comfort & style with our wide range of shoes for all occasions.">
-
-
+    
   <!-- METADATA : FACEBOOK OG INSTAGRAM (styres av samme selskap) -->
         <meta property="og:title" content="Website Analysis and Improvements - Shoepping.no">
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://itstud.hiof.no/~shahdb/oblig4/analyse.html">
         <meta property="og:description" content="Dive deep into our comprehensive website analysis for SEO and universal design at Shoepping.no. Discover how we optimize for better user experience and visibility.">
         <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/12/11/09/30/mobile-phone-1087845_1280.jpg"> 
+        <meta property="og:type" content="product">
         <meta property="og:site_name" content="Shoepping.no">
 
     <!-- Lenker til egendefinerte CSS-stiler -->
@@ -177,7 +176,7 @@
 
 
 
-    <sextion class="seo-analyse-produkdetalj">
+    <section class="seo-analyse-produkdetalj">
 
         <!-- Analyse for Produktdetalj Side Desktop -->
         <article class="seo-analyse-produktdetalj-desktop">
@@ -225,7 +224,6 @@
         <img src="img/webaim-produktdetalj-error-alerts.png" alt="Detaljer av WebAIM analyse for produktdetaljside">
     </article>
 </section>
-
 
 
 <section id="chatgpt-analyse">
@@ -360,7 +358,7 @@
         </tr>
         <tr>
             <td>SEO: Overskrifter</td>
-            <td>Passe på riktig bruk av <h1-h6> for innholdets viktighet</td>
+            <td>Passe på riktig bruk av h1-h6 for innholdets viktighet</td>
             <td></td>
             <td>Missing first level heading</td>
         </tr>
@@ -462,6 +460,35 @@
     <p>Bruken av ARIA-attributter på nettsiden.no hjelper folk som bruker skjermlesere ved å gjøre innholdet lettere å forstå. Men det er noen steder hvor disse ARIA-attributtene kunne blitt brukt på en bedre måte. For eksempel, delen med søkefeltet og ikonene ville vært lettere å bruke hvis det var lagt til en spesiell ARIA-rolle som forteller brukeren at dette området er for søk. Dette ville gjøre det klarere for brukere hva de kan gjøre i denne delen av nettsiden.</p>
 </section>
 
+<section class="seo-analyse-produktside">
+    <h2>Microdata og Richresults </h2>
+    <p>På <a href="produktdetalj.html">produktdetaljsiden</a>, implementerte jeg flere former for microdata for å forbedre SEO og styrke de rike resultatene i søkemotorer. Dette inkluderte:</p>
+    <ul>
+        <li><strong>Produktinformasjon:</strong> Ved bruk av `itemscope` og `itemtype="http://schema.org/Product"`, la jeg til detaljert informasjon om produktet, inkludert navn, beskrivelse og bilde.</li>
+        <li><strong>Merkevare:</strong> Merkevaren til produktet ble spesifisert med `itemprop="brand"`, inne i et `itemscope` og `itemtype="http://schema.org/Brand"`. Dette fremhever merket og forbedrer produktets gjenkjennelse.</li>
+        <li><strong>Tilbuds- og Prisinformasjon:</strong> Pris, valuta og tilgjengelighet ble lagt til ved hjelp av `itemprop="offers"` innenfor et `itemscope` og `itemtype="http://schema.org/Offer"`. Dette gjør det enklere for kunder å finne prisinformasjon i søkemotorer.</li>
+        <li><strong>Kundevurderinger:</strong> Implementerte `itemscope` og `itemtype="http://schema.org/AggregateRating"` for å vise kundevurderinger, som inkluderer `ratingValue` og `reviewCount`.</li>
+        <li><strong>ReturnPolicy:</strong> La til returpolicy ved hjelp av `itemprop="hasMerchantReturnPolicy"` i et `itemscope` og `itemtype="http://schema.org/MerchantReturnPolicy"`, noe som gir tydelig informasjon om returmuligheter.</li>
+    </ul>
+    <p>Prosessen var utfordrende, spesielt siden hver ny tillegg av microdata ofte førte til nye feil som måtte rettes opp. Imidlertid bidro den vellykkede implementeringen betydelig til sidenes søkemotoroptimalisering og brukeropplevelse.</p>
+</section>
+
+<section class="metadata">
+    <h2>Metadata : Facebook og Instagram </h2>
+    <p>Det ble benyttet samme metadata for både Instagram og Facebook siden disse to sosiale mediene er tett integrert og styres av samme selskap</p>
+
+    <h3>Metadata for Forsiden </h3>
+    <img src="img/metadata-fb.png" alt="Metadata for forside">
+
+    <h3>Metadata for Produktsiden</h3>
+    <img src="img/metadata-produkt.png" alt="Metadata for produktside">
+
+    <h3>Metadata for Produktdetalj side</h3>
+    <img src="img/metadata-produktdetalj.png" alt="Metadata for produktdetalj side">
+
+    <h3>Metadata for Analyse siden</h3>
+    <img src="img/metadata-analyse.png" alt="Metadata for analyse siden">
+
 </main>
 
 
@@ -513,7 +540,7 @@
                   </a>
                   
             </section>
+        </footer>
     </div>
 </body>
-</footer>
 </html>
